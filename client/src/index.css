@@ -1,0 +1,95 @@
+*{
+  font-family: cursive;
+  box-sizing: border-box;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+form,table{
+  width: 100%;
+  margin: 20px auto;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+.form-control{
+  margin: 15px 20px;
+}
+.form-control label{
+  text-transform: capitalize;
+  font-size: 20px;
+  padding-right: 10px;
+  display: inline-block;
+}
+.form-control .inp{
+  width: 50%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 18px;
+}
+input[type="submit"]{
+  padding: 10px;
+  outline: none;
+  border: 2px solid #fff;
+  background-color: black;
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 3px;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+input[type="submit"]:hover{
+  color: black;
+  background-color: #fff;
+  border: 2px solid black;
+  cursor: pointer;
+}
+table{
+  text-transform: capitalize;
+  border-collapse: collapse;
+  text-align: center;
+}
+th,td{
+  padding: 10px;
+  padding: 10px;
+  border: 2px solid black;
+}
+.edit,.delete{
+  padding: 10px;
+  margin: 3px;
+  outline: none;
+  border: 1px solid #fff;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 3px;
+}
+.edit{
+  background-color: green;
+}
+.delete{
+  background-color: red;
+}
+.edit:hover{
+  border: 1px solid green;
+  color: green;
+  background-color: #fff;
+}
+.delete:hover{
+  border: 1px solid red;
+  color: red;
+  background-color: #fff;
+}
+@media (max-width:770px){
+  .form-control label{
+    display: block;
+  }
+  .d-ib,.d-ib label{
+    display: inline-block;
+  }
+  .form-control .inp{
+    width: 90%;
+  }
+}
